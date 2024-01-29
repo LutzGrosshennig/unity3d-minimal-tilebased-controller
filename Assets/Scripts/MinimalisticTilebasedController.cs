@@ -69,8 +69,7 @@ public class MinimalisticTilebasedController : MonoBehaviour
 
     void SetPositionAndRotation()
     {
-        float cameraHeight = transform.position.y;
-        Vector3 newPosition = new Vector3(_currentTile.x * Level.tileSize, cameraHeight, _currentTile.y * Level.tileSize);
+        Vector3 newPosition = new Vector3(_currentTile.x * Level.tileSize, 0f, _currentTile.y * Level.tileSize);
         transform.SetPositionAndRotation(newPosition, Quaternion.Euler(0, (int)ViewDirection, 0));
     }
 }

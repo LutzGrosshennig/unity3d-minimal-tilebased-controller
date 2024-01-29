@@ -14,12 +14,12 @@ public class TileArray
     [SerializeField] bool[] _array;
 
     /// <summary>
-    /// Returns the width of the shapes bounding box
+    /// Returns the width of the tile map.
     /// </summary>
     public int width => _width;
 
     /// <summary>
-    /// Returns the height of the shapes bounding box
+    /// Returns the height of the tile map.
     /// </summary>
     public int height => _width;
 
@@ -63,9 +63,9 @@ public class TileArray
     {
         if (pos.x >= 0 || pos.x < width || pos.y >= 0 || pos.y < height)
         {
-            return true; // Position is outside bounds
+            return true; // Position is inside bounds
         }
-        return true;
+        return false;
     }
 
     int LineOffset(Vector2Int pos)
