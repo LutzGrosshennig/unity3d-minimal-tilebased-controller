@@ -4,6 +4,10 @@ This is a movement controller intented for first person 3D grid/tile based dunge
 
 Also it aims to be as minimalistic as possible while it comes with an simple level editor. Therefor it only implements "instant step" movement because that is basically one line of code per direction.
 
+
+https://github.com/LutzGrosshennig/unity3d-minimal-tilebased-controller/assets/29707648/ee39e940-4b16-4c77-9167-f2f43a342d63
+
+
 Collision checks are done based on the underlying 2d tilemap and not using the buildin physisc/raycast system for the following reason:
 
 While physics based controller are easy to set up and work fine in empty dungeons, it starts to become more challenging when you start to add moving entities (aka enemies) into the scene. You will end up placeing blocking colliders all over the place and while this will work it adds extra complexity as you need to manage those colliders as well. I am not even going into what you need to do if you want to place more then one entity onto a single tile. Its doable but it starts nice and easy but can become quiet challanging once you add realtime combat (its less of an issue with turnbased combat).
