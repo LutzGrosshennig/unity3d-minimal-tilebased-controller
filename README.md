@@ -12,6 +12,9 @@ If you are looking for physics based controller with animated transistions and c
 
 https://lutzgrosshennig.itch.io/the-shattered-sigil-of-harmony
 
+![KgrO78](https://github.com/LutzGrosshennig/unity3d-minimal-tilebased-controller/assets/29707648/bd91f4f4-7ae4-4a3a-ad65-73c02dfc0732)
+
+
 # The included level editor.
 The level editor is quiet simple. Just add a checkmark for every tile that should be walkable. "Clear level" will destroy the instantiated level and "Generate level" will build one based on your layout and tile size setting. You may need to adjust the camera height and position as well as the far clip plane of the camera to match the tile size. Its a minimalistic approach after all.
 
